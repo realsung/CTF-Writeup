@@ -29,3 +29,5 @@ for i in range(0,len(data),32):
         slc = get(slc)
     flag += slc
 print flag.replace('\x00','')
+
+# CODEGATE2020{RS_m4y_st4nd_f0r_R3v3rS1ng_RuSt_0r_R33d_S010m0n}
